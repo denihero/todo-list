@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+  'Lucida Sans', Arial, sans-serif;
+}
+.header-title{
+  font-size: 90px;
+  color: whitesmoke;
+  text-align: center;
+}
+body {
+  background: linear-gradient(to bottom, #051937, #0f3255, #184e75, #206b94, #298ab3) no-repeat;
+  height: 100vh;
+}
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border: none;
+  border-radius:2px;
+  border-bottom: 2px solid black;
+  box-sizing: border-box;
+  outline: none;
+  width: 520px;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 23px;
+
+}
+
+.todo-input::placeholder {
+  text-align: center;
+  border: none;
+  border-radius:2px;
+  box-sizing: border-box;
+  color: #e2e2e2;
+}
+
+.todo-input.edit {
+  border: none;
+  border-radius:2px;
+  border-bottom: 2px solid grey;
+  box-sizing: border-box;
+  outline: none;
+}
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  font-size: 20px;
+  color: #fff;
+  background: #174970;
+  padding: 16px;
+  border-radius: 8px;
+  width: 30%;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+
+#context-menu{
+  position: fixed;
+  z-index: 10000;
+  width: 150px;
+  background: #1b1a1a;
+  border-radius: 5px;
+  display: none;
+}
+#context-menu.visible{
+  display: block;
+}
+#context-menu .item{
+  padding: 8px 10px;
+  font-size: 15px;
+  color: #eee;
+  cursor: pointer;
+  border-radius: inherit;
+}
+#context-menu .item:hover{
+  background: #343434;
+}
