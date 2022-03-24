@@ -1,7 +1,6 @@
 import './App.css';
 import TodoList from "./component/TodoList";
 import React from "react";
-import RightClick from "./detail/RightClick";
 
 function App() {
 
