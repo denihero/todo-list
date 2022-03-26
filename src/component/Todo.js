@@ -34,7 +34,7 @@ function Todo({todos,completeTodo,removeTodo,updateTodo}) {
                     <RiCloseCircleLine onClick={() => removeTodo(todo.id)}
                                        className='delete-icon'
                     />
-                    <TiEdit nClick={() => setEdit({id: todo.id, value: todo.text})}
+                    <TiEdit onClick={() => setEdit({id: todo.id, value: todo.text})}
                             className='edit-icon'/>
                 </div>
 

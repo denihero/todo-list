@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <h1 className="header-title">Taskoo</h1>
+
         <TodoList/>
     </div>
   );

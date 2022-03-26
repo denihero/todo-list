@@ -25,8 +25,7 @@ function TodoList() {
         if(!newValue.text || /^\s*$/.test(newValue.text)){
             return
         }
-
-        setTodos(prev => prev.map(item => (item.id === todosId ?newValue:item)))
+        setTodos(prev => prev.map(item => (item.id === todosId ? newValue:item)))
 
     }
 
